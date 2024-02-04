@@ -18,6 +18,11 @@ return {
     --   desc = "Previous buffer",
     -- },
 
+    ["<ScrollWheelRight>"] = function() end,
+    ["<ScrollWheelLeft>"] = function() end,
+    ["<S-ScrollWheelUp>"] = "<ScrollWheelRight>",
+    ["<S-ScrollWheelDown>"] = "<ScrollWheelLeft>",
+
     -- mappings seen under group name "Buffer"
     ["<leader>bD"] = {
       function()
