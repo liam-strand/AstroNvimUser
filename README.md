@@ -1,36 +1,12 @@
-# AstroNvim User Configuration Example
+# Liam's Customizations for AstroNvim
 
-A user configuration template for [AstroNvim](https://github.com/AstroNvim/AstroNvim)
+## Changes
 
-## 🛠️ Installation
-
-#### Make a backup of your current nvim and shared folder
-
-```shell
-mv ~/.config/nvim ~/.config/nvim.bak
-mv ~/.local/share/nvim ~/.local/share/nvim.bak
-```
-
-#### Clone AstroNvim
-
-```shell
-git clone https://github.com/AstroNvim/AstroNvim ~/.config/nvim
-```
-
-#### Create a new user repository from this template
-
-Press the "Use this template" button above to create a new repository to store your user configuration.
-
-You can also just clone this repository directly if you do not want to track your user configuration in GitHub.
-
-#### Clone the repository
-
-```shell
-git clone https://github.com/<your_user>/<your_repository> ~/.config/nvim/lua/user
-```
-
-#### Start Neovim
-
-```shell
-nvim
-```
+- Custom randomized header text on nvim dashboard
+- Monokai Pro color theme (I'm colorblind and it helps!)
+- Absolute line numbers
+- The tab key produces four spaces instead of a tab character
+- Wrap text at the end of the display
+- Highlight the 80th column
+- Use shift + vertical scroll to do horizontal scrolling
+- No italics from Monokai Pro

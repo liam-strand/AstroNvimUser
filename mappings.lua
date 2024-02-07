@@ -4,6 +4,13 @@
 -- lower level configuration and more robust one. (which-key will
 -- automatically pick-up stored data by this setting.)
 return {
+  -- no mode = n + v + s + o
+  [""] = {
+    ["<ScrollWheelRight>"] = function() end,
+    ["<ScrollWheelLeft>"] = function() end,
+    ["<S-ScrollWheelUp>"] = "<ScrollWheelRight>",
+    ["<S-ScrollWheelDown>"] = "<ScrollWheelLeft>",
+  },
   -- first key is the mode
   n = {
     -- second key is the lefthand side of the map
@@ -18,10 +25,6 @@ return {
     --   desc = "Previous buffer",
     -- },
 
-    ["<ScrollWheelRight>"] = function() end,
-    ["<ScrollWheelLeft>"] = function() end,
-    ["<S-ScrollWheelUp>"] = "<ScrollWheelRight>",
-    ["<S-ScrollWheelDown>"] = "<ScrollWheelLeft>",
 
     -- mappings seen under group name "Buffer"
     ["<leader>bD"] = {
