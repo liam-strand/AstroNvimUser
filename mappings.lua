@@ -4,8 +4,14 @@
 -- lower level configuration and more robust one. (which-key will
 -- automatically pick-up stored data by this setting.)
 return {
-  -- no mode = n + v + s + o
-  [""] = {
+  
+  i = {
+    ["<ScrollWheelRight>"] = function() end,
+    ["<ScrollWheelLeft>"] = function() end,
+    ["<S-ScrollWheelUp>"] = "<ScrollWheelRight>",
+    ["<S-ScrollWheelDown>"] = "<ScrollWheelLeft>",
+  },
+  v = {
     ["<ScrollWheelRight>"] = function() end,
     ["<ScrollWheelLeft>"] = function() end,
     ["<S-ScrollWheelUp>"] = "<ScrollWheelRight>",
@@ -24,6 +30,10 @@ return {
     --   function() require("astronvim.utils.buffer").nav(-(vim.v.count > 0 and vim.v.count or 1)) end,
     --   desc = "Previous buffer",
     -- },
+    ["<ScrollWheelRight>"] = function() end,
+    ["<ScrollWheelLeft>"] = function() end,
+    ["<S-ScrollWheelUp>"] = "<ScrollWheelRight>",
+    ["<S-ScrollWheelDown>"] = "<ScrollWheelLeft>",
 
 
     -- mappings seen under group name "Buffer"
