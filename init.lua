@@ -62,6 +62,13 @@ return {
             }
           }
         }
+      },
+      gopls = {
+        settings = {
+          gopls = {
+            semanticTokens = true
+          },
+        }
       }
     }
   },
